@@ -1,0 +1,58 @@
+body {
+  margin: 0 auto;
+  background-color: gray;
+  justify-items: center;
+  text-align: center;
+}
+
+input {
+  border: 2px solid black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 1.5rem;
+  background-color: beige;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 0.5em;
+  
+}
+
+.btn {
+  background-color: beige;
+  color: black;
+  margin-top: 0.5em;
+  width: 100px;
+  border-radius: 0.5em;
+}
+
+.movies {
+ background-color: beige;
+ height: 200px;
+ width: 1000px;
+ margin: 0 auto;
+ border-radius: 0.5em;
+
+}
+
+.sub_movie {
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 0.5em;
+    margin: 2em;
+    float: left;
+    
+}
+
+.sub_movie > p {
+    color:beige;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sub_movie > input {
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}

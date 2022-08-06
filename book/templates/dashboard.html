@@ -1,0 +1,68 @@
+{% extends 'main.html' %}
+
+
+{% block content%}
+<br>
+
+<div class="row">
+<div class="col-md-4">
+<h5>Movies:</h5>
+<hr>
+<form class="form-inline" method="post" action="">
+  {% csrf_token %}
+<div class="card card-body">
+  <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">Name</span>
+  </div>
+  <input type="text" class="form-control" name = "name" required>
+</div>
+
+
+  <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">Birthdate</span>
+  </div>
+  <input type="date" class="form-control" name="birthdate" required>
+
+<a class="btn btn-primary  btn-sm btn-block" href="">Choose a movie</a>
+
+<nav class="navbar navbar-light bg-light">
+    <button class="btn btn-sm btn-outline-secondary" type="button" id="m1">
+      <input type="hidden" id="fm1" name="fm1" value="" />
+      Movie 1
+    </button>
+
+    <button class="btn btn-sm btn-outline-secondary" type="button" id="m2">
+      <input type="hidden" id="fm2" name="fm2" value="" />
+      Movie 2
+    </button>
+</nav>
+
+<a class="btn btn-primary  btn-sm btn-block" href="">Choose a time</a>
+
+<nav class="navbar navbar-light bg-light">
+    <button class="btn btn-sm btn-outline-secondary" type="button" id = "t1">
+      <input type="hidden" id="ft1" name="ft1" value="" />
+      4:6PM
+    </button>
+
+    <button class="btn btn-sm btn-outline-secondary" type="button" id = "t2">
+      <input type="hidden" id="ft2" name="ft2" value="" />
+      10:12PM
+    </button>
+</nav>
+
+<a class="btn btn-primary  btn-sm btn-block" href="">Enter numer of Ticket</a>
+<div class="input-group">
+  <input type="number" class="form-control" name = "ticket"  min="0" max="50" required>
+  <div class="input-group-append">
+  </div>
+</div>
+</div>
+<button class="btn btn-outline-success" type="submit">Submit</button>
+</form>
+</div>
+</div>
+
+{% endblock content%}
